@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Exercício</title>
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+<body>
+    
+    <header>
+        <h1>Título</h1>
+    </header>
+
+    <section>
+
+        <div>
+            <p>
+                Número (entre 1 e 100): <input type="number" name="caixa1" id="caixa1">
+                <input type="button" value="Adicionar" onclick="adicionar()">
+            </p>
+        </div>
+
+        <div>
+            <p>
+                <select style="width: 180px; display: block; margin: 0 auto;" name="tabselect" id="tabselect" size="10">
+                <option  value="">Aqui vai os <strong>valores!</strong></option>
+                </select>
+            </p>
+
+            <input style=" display: block ;margin: 0 auto;" type="button" value="Finalizar" onclick="finalizar()">
+            <p id="res"></p>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy;PabLoSWeb</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
