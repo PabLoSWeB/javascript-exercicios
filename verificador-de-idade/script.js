@@ -9,12 +9,6 @@ function verificar(){
     let idade = Number(ano - anoInserido)
     let res = document.querySelector('div#resultado')
     let img = document.getElementById('imagem')
-    
-    img.style.width = '220px'
-    img.style.height = '220px'
-    img.style.borderRadius = '127px'
-    img.style.boxShadow = '5px 10px 5px rgba(0, 0, 0, 0.63)'
-    img.style.paddingTop = '10px'
 
     if (/\D/.test(tn1)) {
         res.innerHTML = 'Digite apenas <strong>números</strong>'
@@ -36,6 +30,11 @@ function verificar(){
     } 
     
     else {
+        img.style.width = '220px'
+        img.style.height = '220px'
+        img.style.borderRadius = '127px'
+        img.style.boxShadow = '5px 10px 5px rgba(0, 0, 0, 0.63)'
+        img.style.paddingTop = '10px'
         if (!feminino){
         if (idade == 1 ){
             res.innerHTML = `Você é um <strong>bebê</strong> de ${idade} ano!`
